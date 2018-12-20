@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SCHOOL OF HARD KNOCKS</title>
+    <style>
+      .cursor {
+        cursor: url('FFTcursor.png'), crosshair;
+      }
+    </style>
+  </head>
+  <body class = "cursor" style = "background-image: url('background.png');">
+    <div id="nav" style="display:inline-flex; flex-direction: column; min-height: 100vh;">
+      <div>Profile</div>
+      <div>New</div>
+      <div onMouseOver = "popout()" onmouseout = "popin()">Browse</div>
+      <img src="FFTCursor.png" alt="">
+    </div>
+    </nav>
+    <script>
+      function popout(){
+        console.log("something hovered");
+        console.log(event.target);
+        event.target.style.paddingLeft = "30px";
+      }
+      function popin(){
+        console.log("something hovered");
+        console.log(event.target);
+        event.target.style.paddingLeft = "0px";
+      }
+    </script>
+  </body>
+</html>
